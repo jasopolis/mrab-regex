@@ -4,8 +4,8 @@ name: cibuildwheel
 # Build on every branch push with tag.
 on:
   push:
-    tags:
-      - '*'
+    branches:
+      - '**'
 
 env:
   PYTHON_VER: '3.11'  # Python to run test/cibuildwheel
